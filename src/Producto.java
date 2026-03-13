@@ -16,7 +16,7 @@ public class Producto {
     }
 
     public double getPrecio() {
-        return precio;
+            return precio;
     }
 
     public int getStock() {

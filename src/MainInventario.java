@@ -31,12 +31,13 @@ public class MainInventario {
         inventario.listarProductos();
 
         System.out.println("Actualizado el stock de un producto que no existe (RAM) a 7. No debería actualizar pero tampoco dar error.");
-        inventario.actualizarStock("RAM", 7);
+        //inventario.actualizarStock("RAM", 7);
         inventario.listarProductos();
 
         // Manipulamos datos “erróneos” para el valor total
         // Introducimos stock negativo a propósito
         p2.setStock(-3);
+        System.out.println("Total: " + inventario.calcularValorTotalStock());
 
 
         double valorTotal = inventario.calcularValorTotalStock();
